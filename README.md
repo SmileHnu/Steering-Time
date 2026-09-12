@@ -44,3 +44,7 @@ Then visit `http://localhost:8000`.
 The site is served from the **`main` branch, `/docs` folder**. In the repository's **Settings → Pages**, select **Deploy from a branch**, then `main` and `/docs`. Changes pushed to `main` are published automatically.
 
 The page uses plain HTML, CSS, and JavaScript, with relative asset paths compatible with GitHub project Pages. Audio is loaded on demand; starting another recording pauses the previous one.
+
+Each player includes a waveform computed from the original WAV samples, with a green overlay indicating playback progress. The static SVG previews load without downloading the audio. They show minimum/maximum sample amplitudes in 240 time bins, preserving peaks across channels. Amplitude uses a full-scale reference of 1; recordings exceeding that range are scaled to fit. These previews illustrate timing and are not loudness measurements.
+
+To regenerate waveforms after replacing audio files, install `numpy` and `soundfile`, then run `python scripts/render_waveforms.py`.
