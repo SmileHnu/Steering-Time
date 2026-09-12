@@ -1,0 +1,226 @@
+[
+  {
+    "task": "ordering",
+    "sample_id": "syn_107",
+    "caption": "Someone coughs twice, followed by a sequence of cricket chirps occurring four times.",
+    "models": {
+      "tangoflux_ours": {
+        "label": "TangoFlux + Ours",
+        "audio": "audio/ordering/tangoflux_ours.wav",
+        "sha256": "5f70bb19b82114fa13c98cb5f12252c5f13efedd2f998ad2bebe5534621f26ac",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tangoflux": {
+        "label": "TangoFlux",
+        "audio": "audio/ordering/tangoflux.wav",
+        "sha256": "eecad19c74a6f875405e18f6f2b6acd9071d36b87c3a20f593a203bcad968c39",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audiogen": {
+        "label": "AudioGen",
+        "audio": "audio/ordering/audiogen.wav",
+        "sha256": "80f9d9d4b6b44f9b8038fb85dd4472d8f48e8f592e5b7b5c8641ab142ba862f1",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm": {
+        "label": "AudioLDM",
+        "audio": "audio/ordering/audioldm.wav",
+        "sha256": "e9c06afd9288afe2c4b852701b991d9e58f60c293fa235c348e5b52528818bd5",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm2": {
+        "label": "AudioLDM2",
+        "audio": "audio/ordering/audioldm2.wav",
+        "sha256": "5770bd53d6b5b53dc39bdd5889fa56d3ab1b8ba3e45d307f03fd0c3a97607939",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango": {
+        "label": "Tango",
+        "audio": "audio/ordering/tango.wav",
+        "sha256": "0dca3a161d6b2ff712371d88d5275b52ac748b27f1aa7044cf5a7e093d1a6f0e",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango2": {
+        "label": "Tango2",
+        "audio": "audio/ordering/tango2.wav",
+        "sha256": "a46ca6a4ae6771b92e99c4551d62189627eb037212d8253812d22c5fbd9bafa1",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      }
+    }
+  },
+  {
+    "task": "duration",
+    "sample_id": "syn_1",
+    "caption": "A cat meowed for 1.092 seconds, followed by a cowbell ringing for 5.167 seconds.",
+    "models": {
+      "tangoflux_ours": {
+        "label": "TangoFlux + Ours",
+        "audio": "audio/duration/tangoflux_ours.wav",
+        "sha256": "f528283cacc830bf116a0ab48e1c89d95ccdc3c284f53258aa9bdcd08575b58c",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tangoflux": {
+        "label": "TangoFlux",
+        "audio": "audio/duration/tangoflux.wav",
+        "sha256": "e92665917c5d692387643c7bfd0fe70e3a93174c792b6cdeb7b2edbd8853738f",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audiogen": {
+        "label": "AudioGen",
+        "audio": "audio/duration/audiogen.wav",
+        "sha256": "d95d2e7eb6b72dd35f5770422578b63d50e16ae6aec94e6a62a72bd5f12c642e",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm": {
+        "label": "AudioLDM",
+        "audio": "audio/duration/audioldm.wav",
+        "sha256": "a35561e34067cc206eaabc37ef9cb1c99e0d682e957b4fd4c1fd009a49e70a85",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm2": {
+        "label": "AudioLDM2",
+        "audio": "audio/duration/audioldm2.wav",
+        "sha256": "80723d146934b2f4c2af8cc473614e687a85a784eb9a120458da14c1101878b9",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango": {
+        "label": "Tango",
+        "audio": "audio/duration/tango.wav",
+        "sha256": "b8a0ae8b4c4471bcf04f7f1003a713cf1a0d2801cf2771df8fbfb772e599ed6c",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango2": {
+        "label": "Tango2",
+        "audio": "audio/duration/tango2.wav",
+        "sha256": "f8588cbcf9ed370a0cf87d82839991722aad03340f4fd217d4cfebbe4b86f14c",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      }
+    }
+  },
+  {
+    "task": "frequency",
+    "sample_id": "syn_100",
+    "caption": "A water tap or faucet was turned on twice.",
+    "models": {
+      "tangoflux_ours": {
+        "label": "TangoFlux + Ours",
+        "audio": "audio/frequency/tangoflux_ours.wav",
+        "sha256": "0bdf7d6480e5b33e4e794b4e79ff7f1d81ea5b706423a273a2906a65ed035568",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tangoflux": {
+        "label": "TangoFlux",
+        "audio": "audio/frequency/tangoflux.wav",
+        "sha256": "029da99980b0c60d0e7f9ba83eea168ee0cc63a492ee6bc686a2028ad64a77c8",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audiogen": {
+        "label": "AudioGen",
+        "audio": "audio/frequency/audiogen.wav",
+        "sha256": "d12e53be5365f31372a41b76f9e3ab3150719f10b1b00151a7d3fd8c84cc3d36",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm": {
+        "label": "AudioLDM",
+        "audio": "audio/frequency/audioldm.wav",
+        "sha256": "951460bd3b5c6b5e50870bc882c17aa6dff2312ade158bb87f7ae83bbb349fc8",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm2": {
+        "label": "AudioLDM2",
+        "audio": "audio/frequency/audioldm2.wav",
+        "sha256": "f51291e5e35bea1d224f74afb0a216bddb90b6997a7a32d99c985d8ff17181ee",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango": {
+        "label": "Tango",
+        "audio": "audio/frequency/tango.wav",
+        "sha256": "ca679da95e12dd937789091139907f1bb9cc3209b13d545d64aba9cea6271141",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango2": {
+        "label": "Tango2",
+        "audio": "audio/frequency/tango2.wav",
+        "sha256": "e880b762b8f6162856c35cf30e5a7e737fec50215342dcc2530b4a0d5e17e475",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      }
+    }
+  },
+  {
+    "task": "timestamp",
+    "sample_id": "syn_181",
+    "caption": "A mosquito is heard buzzing from 1.248 to 6.067 seconds and again from 6.798 to 10.0 seconds.",
+    "models": {
+      "tangoflux_ours": {
+        "label": "TangoFlux + Ours",
+        "audio": "audio/timestamp/tangoflux_ours.wav",
+        "sha256": "9f4476798ca8cafd41dd1eba70926f6635174039ee6ed040d9605cab67f0fff2",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tangoflux": {
+        "label": "TangoFlux",
+        "audio": "audio/timestamp/tangoflux.wav",
+        "sha256": "4bd78bb3fbdb1e15aa5aea0bf142075e6cc5477df19a5572734e947221197e7e",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audiogen": {
+        "label": "AudioGen",
+        "audio": "audio/timestamp/audiogen.wav",
+        "sha256": "db6494f331ffaf557e565082b90a9f9daec6f2e095a473c762aec4cfe492dcc0",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm": {
+        "label": "AudioLDM",
+        "audio": "audio/timestamp/audioldm.wav",
+        "sha256": "6cd0eb2e85e388c29c7e7c2623210a44a7189bb42e4d637b21e998c5c82ace18",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "audioldm2": {
+        "label": "AudioLDM2",
+        "audio": "audio/timestamp/audioldm2.wav",
+        "sha256": "89397db9d13a2b903b70718b8fd0f0751204ee7b6a17cf2f07e395ef715f6e0b",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango": {
+        "label": "Tango",
+        "audio": "audio/timestamp/tango.wav",
+        "sha256": "6db81bbafc09e3eb4d6ad149521f5e2ebb484f0a2b34dff6664cb2ec82f86dcb",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      },
+      "tango2": {
+        "label": "Tango2",
+        "audio": "audio/timestamp/tango2.wav",
+        "sha256": "8d9770f083363535e6ad061cbe2537dde99c9320150573be33df874481a8ac89",
+        "duration_seconds": 10.0,
+        "seed": 1234
+      }
+    }
+  }
+]

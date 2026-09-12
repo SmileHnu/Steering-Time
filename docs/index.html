@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Steering-Time audio demos: compare seven models on ordering, duration, frequency, and timestamp control in text-to-audio generation.">
+  <meta name="theme-color" content="#12665b">
+  <title>Steering-Time | Audio Demos</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="wordmark" href="#top"><span class="brand-mark" aria-hidden="true">≋</span>Steering-Time</a><a class="repo-link" href="https://github.com/SmileHnu/Steering-Time">GitHub <span aria-hidden="true">↗</span></a></header>
+  <main id="top">
+    <div class="intro"><p class="eyebrow">Text-to-audio generation · Audio demos</p><h1>Steering-Time</h1><p class="subtitle">Temporal control in text-to-audio generation</p><p class="description">One instruction for each type of temporal control.<br>Listen to seven models side by side.</p></div>
+    <nav class="task-nav" aria-label="Temporal control examples"><a href="#ordering"><span>01</span> Ordering</a><a href="#duration"><span>02</span> Duration</a><a href="#frequency"><span>03</span> Frequency</a><a href="#timestamp"><span>04</span> Timestamp</a></nav>
+    <div class="listening-note"><span aria-hidden="true">♫</span> Headphones recommended. Playing a new sample pauses the previous one.</div>
+    <section class="example" id="ordering" aria-labelledby="heading-ordering">
+      <div class="section-heading"><span class="number">01</span><div><h2 id="heading-ordering">Ordering</h2><p>Control the order of sound events.</p></div></div>
+      <div class="prompt"><span class="prompt-label">Instruction</span><p>Someone coughs twice, followed by a sequence of cricket chirps occurring four times.</p></div>
+      <div class="audio-grid"><div class="audio-card ours">
+          <div class="model"><span>TangoFlux + Ours</span><span class="badge">Ours</span></div>
+          <audio controls preload="none" aria-label="Ordering: TangoFlux + Ours"><source src="audio/ordering/tangoflux_ours.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/ordering/tangoflux_ours.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/ordering/tangoflux_ours.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>TangoFlux</span></div>
+          <audio controls preload="none" aria-label="Ordering: TangoFlux"><source src="audio/ordering/tangoflux.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/ordering/tangoflux.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/ordering/tangoflux.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioGen</span></div>
+          <audio controls preload="none" aria-label="Ordering: AudioGen"><source src="audio/ordering/audiogen.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/ordering/audiogen.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/ordering/audiogen.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM</span></div>
+          <audio controls preload="none" aria-label="Ordering: AudioLDM"><source src="audio/ordering/audioldm.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/ordering/audioldm.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/ordering/audioldm.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM2</span></div>
+          <audio controls preload="none" aria-label="Ordering: AudioLDM2"><source src="audio/ordering/audioldm2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/ordering/audioldm2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/ordering/audioldm2.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango</span></div>
+          <audio controls preload="none" aria-label="Ordering: Tango"><source src="audio/ordering/tango.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/ordering/tango.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/ordering/tango.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango2</span></div>
+          <audio controls preload="none" aria-label="Ordering: Tango2"><source src="audio/ordering/tango2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/ordering/tango2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/ordering/tango2.wav">Download WAV</a></p>
+        </div></div>
+    </section>
+<section class="example" id="duration" aria-labelledby="heading-duration">
+      <div class="section-heading"><span class="number">02</span><div><h2 id="heading-duration">Duration</h2><p>Control how long each sound lasts.</p></div></div>
+      <div class="prompt"><span class="prompt-label">Instruction</span><p>A cat meowed for 1.092 seconds, followed by a cowbell ringing for 5.167 seconds.</p></div>
+      <div class="audio-grid"><div class="audio-card ours">
+          <div class="model"><span>TangoFlux + Ours</span><span class="badge">Ours</span></div>
+          <audio controls preload="none" aria-label="Duration: TangoFlux + Ours"><source src="audio/duration/tangoflux_ours.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/duration/tangoflux_ours.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/duration/tangoflux_ours.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>TangoFlux</span></div>
+          <audio controls preload="none" aria-label="Duration: TangoFlux"><source src="audio/duration/tangoflux.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/duration/tangoflux.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/duration/tangoflux.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioGen</span></div>
+          <audio controls preload="none" aria-label="Duration: AudioGen"><source src="audio/duration/audiogen.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/duration/audiogen.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/duration/audiogen.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM</span></div>
+          <audio controls preload="none" aria-label="Duration: AudioLDM"><source src="audio/duration/audioldm.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/duration/audioldm.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/duration/audioldm.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM2</span></div>
+          <audio controls preload="none" aria-label="Duration: AudioLDM2"><source src="audio/duration/audioldm2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/duration/audioldm2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/duration/audioldm2.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango</span></div>
+          <audio controls preload="none" aria-label="Duration: Tango"><source src="audio/duration/tango.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/duration/tango.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/duration/tango.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango2</span></div>
+          <audio controls preload="none" aria-label="Duration: Tango2"><source src="audio/duration/tango2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/duration/tango2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/duration/tango2.wav">Download WAV</a></p>
+        </div></div>
+    </section>
+<section class="example" id="frequency" aria-labelledby="heading-frequency">
+      <div class="section-heading"><span class="number">03</span><div><h2 id="heading-frequency">Frequency</h2><p>Control how many times a sound occurs.</p></div></div>
+      <div class="prompt"><span class="prompt-label">Instruction</span><p>A water tap or faucet was turned on twice.</p></div>
+      <div class="audio-grid"><div class="audio-card ours">
+          <div class="model"><span>TangoFlux + Ours</span><span class="badge">Ours</span></div>
+          <audio controls preload="none" aria-label="Frequency: TangoFlux + Ours"><source src="audio/frequency/tangoflux_ours.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/frequency/tangoflux_ours.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/frequency/tangoflux_ours.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>TangoFlux</span></div>
+          <audio controls preload="none" aria-label="Frequency: TangoFlux"><source src="audio/frequency/tangoflux.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/frequency/tangoflux.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/frequency/tangoflux.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioGen</span></div>
+          <audio controls preload="none" aria-label="Frequency: AudioGen"><source src="audio/frequency/audiogen.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/frequency/audiogen.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/frequency/audiogen.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM</span></div>
+          <audio controls preload="none" aria-label="Frequency: AudioLDM"><source src="audio/frequency/audioldm.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/frequency/audioldm.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/frequency/audioldm.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM2</span></div>
+          <audio controls preload="none" aria-label="Frequency: AudioLDM2"><source src="audio/frequency/audioldm2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/frequency/audioldm2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/frequency/audioldm2.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango</span></div>
+          <audio controls preload="none" aria-label="Frequency: Tango"><source src="audio/frequency/tango.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/frequency/tango.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/frequency/tango.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango2</span></div>
+          <audio controls preload="none" aria-label="Frequency: Tango2"><source src="audio/frequency/tango2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/frequency/tango2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/frequency/tango2.wav">Download WAV</a></p>
+        </div></div>
+    </section>
+<section class="example" id="timestamp" aria-labelledby="heading-timestamp">
+      <div class="section-heading"><span class="number">04</span><div><h2 id="heading-timestamp">Timestamp</h2><p>Control when sound events begin and end.</p></div></div>
+      <div class="prompt"><span class="prompt-label">Instruction</span><p>A mosquito is heard buzzing from 1.248 to 6.067 seconds and again from 6.798 to 10.0 seconds.</p></div>
+      <div class="audio-grid"><div class="audio-card ours">
+          <div class="model"><span>TangoFlux + Ours</span><span class="badge">Ours</span></div>
+          <audio controls preload="none" aria-label="Timestamp: TangoFlux + Ours"><source src="audio/timestamp/tangoflux_ours.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/timestamp/tangoflux_ours.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/timestamp/tangoflux_ours.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>TangoFlux</span></div>
+          <audio controls preload="none" aria-label="Timestamp: TangoFlux"><source src="audio/timestamp/tangoflux.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/timestamp/tangoflux.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/timestamp/tangoflux.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioGen</span></div>
+          <audio controls preload="none" aria-label="Timestamp: AudioGen"><source src="audio/timestamp/audiogen.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/timestamp/audiogen.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/timestamp/audiogen.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM</span></div>
+          <audio controls preload="none" aria-label="Timestamp: AudioLDM"><source src="audio/timestamp/audioldm.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/timestamp/audioldm.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/timestamp/audioldm.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>AudioLDM2</span></div>
+          <audio controls preload="none" aria-label="Timestamp: AudioLDM2"><source src="audio/timestamp/audioldm2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/timestamp/audioldm2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/timestamp/audioldm2.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango</span></div>
+          <audio controls preload="none" aria-label="Timestamp: Tango"><source src="audio/timestamp/tango.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/timestamp/tango.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/timestamp/tango.wav">Download WAV</a></p>
+        </div><div class="audio-card">
+          <div class="model"><span>Tango2</span></div>
+          <audio controls preload="none" aria-label="Timestamp: Tango2"><source src="audio/timestamp/tango2.wav" type="audio/wav">Your browser does not support audio playback. <a href="audio/timestamp/tango2.wav">Download WAV</a></audio>
+          <p class="audio-error" hidden>Unable to load audio. <a href="audio/timestamp/tango2.wav">Download WAV</a></p>
+        </div></div>
+    </section>
+    <aside class="selection-note"><h2>About these samples</h2><p>These are selected qualitative examples, one per task, chosen using automatic STEAM measurements. They do not represent average test-set performance and have not been validated through blind listening. Original WAV files are presented without trimming, normalization, or splicing.</p></aside>
+  </main>
+  <footer><span>Steering-Time</span><a href="https://github.com/SmileHnu/Steering-Time">Project repository ↗</a></footer>
+</body>
+</html>
