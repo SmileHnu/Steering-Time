@@ -25,7 +25,7 @@ The demo presents one instruction for each of four temporal control tasks: **Ord
 | Frequency | syn_100 | A water tap or faucet was turned on twice. |
 | Timestamp | syn_181 | A mosquito is heard buzzing from 1.248 to 6.067 seconds and again from 6.798 to 10.0 seconds. |
 
-These selected qualitative examples use the first listed main-comparison example per task from the September 12, 2026 demo material. Selection was based on automatic STEAM measurements, not blind listening. The examples do not represent average test-set performance. WAV files are copied unchanged, without trimming, normalization, or splicing.
+One audio example is presented for each temporal instruction type. Original WAV files are preserved unchanged.
 
 [`docs/samples.json`](docs/samples.json) records the instructions, model labels, sample IDs, generation seeds, durations, and SHA-256 checksums. Each instruction appears once on the page, with seven corresponding audio players (28 recordings total).
 
@@ -44,7 +44,3 @@ Then visit `http://localhost:8000`.
 The site is served from the **`main` branch, `/docs` folder**. In the repository's **Settings → Pages**, select **Deploy from a branch**, then `main` and `/docs`. Changes pushed to `main` are published automatically.
 
 The page uses plain HTML, CSS, and JavaScript, with relative asset paths compatible with GitHub project Pages. Audio is loaded on demand; starting another recording pauses the previous one.
-
-Each player includes a waveform computed from the original WAV samples, with a green overlay indicating playback progress. The static SVG previews load without downloading the audio. They show minimum/maximum sample amplitudes in 240 time bins, preserving peaks across channels. Amplitude uses a full-scale reference of 1; recordings exceeding that range are scaled to fit. These previews illustrate timing and are not loudness measurements.
-
-To regenerate waveforms after replacing audio files, install `numpy` and `soundfile`, then run `python scripts/render_waveforms.py`.
