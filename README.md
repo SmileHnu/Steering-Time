@@ -4,6 +4,16 @@ Temporal control in text-to-audio generation.
 
 **[Listen to the audio demos →](https://SmileHnu.github.io/Steering-Time/)**
 
+The demo page can be accessed at: [https://smilehnu.github.io/Steering-Time/](https://smilehnu.github.io/Steering-Time/).
+
+## Code and dataset availability
+
+The code and counterfactual dataset are being organized and will be released progressively as they become ready.
+
+代码和反事实数据集正在整理中，整理完毕后将陆续开放。
+
+## Audio demos
+
 The demo presents one instruction for each of four temporal control tasks: **Ordering**, **Duration**, **Frequency**, and **Timestamp**. Each instruction is shared by seven models: AudioGen, AudioLDM, AudioLDM2, Tango, Tango2, TangoFlux, and TangoFlux + Ours.
 
 ## Samples
